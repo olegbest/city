@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Примеры. Прямое геокодирование</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="city.js"></script>
+    <script src="geocode.js" type="text/javascript"></script>
+    <style type="text/css">
+         #map {
+            width: 70vw;
+            height: 60vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .input-city{
+          margin: 5px;
+        }
+
+        .player{
+          margin: 0 0 0 10px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="input-city">Введите город <input type="text"><span class="player">Ваш ход..</span> <input type="button" value="Сдаться" onclick="endGame();"></div>
+
+    <div id="map"></div>
+  </body>
+</html>
